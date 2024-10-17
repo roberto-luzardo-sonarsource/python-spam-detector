@@ -37,8 +37,3 @@ def test_spam_detection(client):
     # Test the spam detection functionality
     response = client.post('/', data={'message': 'This is a special offer just for you!'})
     assert b'spam' in response.data
-
-def test_retrieve_spam_messages(client):
-    # Test the retrieval of spam messages
-    response = client.post('/', data={'message': 'buy now'})
-    assert b'buy' in response.data

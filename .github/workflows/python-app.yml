@@ -37,3 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Official SonarQube Scan
+      uses: SonarSource/sonarqube-scan-action@v3.0.0
+
+                

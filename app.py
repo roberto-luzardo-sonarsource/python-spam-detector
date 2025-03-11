@@ -78,7 +78,7 @@ def spam_detector():
         
         if any(word in message.lower() for word in spam_words):
             result = "This message might be spam!"
-            c.execute(f"INSERT INTO spam_messages (message) VALUES ('{message}')")
+            c.execute(f"INSERT INTO spam_messages (message) VALUES ('{message}')") # Insert message into database
             conn.commit()
         else:
             result = "This message is probably not spam."

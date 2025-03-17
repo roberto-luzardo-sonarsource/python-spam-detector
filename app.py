@@ -12,7 +12,7 @@ def init_db():
     c.execute('''CREATE TABLE IF NOT EXISTS spam_words
                  (id INTEGER PRIMARY KEY, word TEXT)''')
     conn.commit()
-    // Meaningless edit
+    # Meaningless edit
     conn.close()
 
 # Insert some sample data

@@ -95,7 +95,7 @@ def spam_detector():
         if related_spam_messages:
             print("Matching related spam messages:")
             for msg in related_spam_messages:
-            print(msg)
+                print(msg)
         else:
             print("No matching related spam messages found.")
 

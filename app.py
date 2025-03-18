@@ -91,6 +91,14 @@ def spam_detector():
         c.execute("SELECT message FROM spam_messages WHERE message LIKE ?", ('%' + message + '%',))
         related_spam_messages = [row[0] for row in c.fetchall()]
         
+        # Print matching related spam messages
+        if related_spam_messages:
+            print("Matching related spam messages:")
+            for msg in related_spam_messages:
+            print(msg)
+        else:
+            print("No matching related spam messages found.")
+
     # Fetch all spam messages
     c.execute("SELECT message FROM spam_messages")
     spam_messages = [row[0] for row in c.fetchall()]

@@ -13,7 +13,7 @@ def init_db():
                  (id INTEGER PRIMARY KEY, word TEXT)''')
     conn.commit()
     print("Brian was here")
-    print("Jeff was here too")
+    print("Jeff is still here too")
     conn.close()
 
 # Insert some sample data

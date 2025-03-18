@@ -13,7 +13,9 @@ def init_db():
                  (id INTEGER PRIMARY KEY, word TEXT)''')
     conn.commit()
     print("Brian was here")
-    print("Jeff is still here too")
+    print("Jeff is still here")
+    print("Jeff is still here")
+    print("Jeff is still here")
     conn.close()
 
 # Insert some sample data
@@ -86,7 +88,8 @@ def spam_detector():
             result = "This message is probably not spam."
 
         # Fetch related spam messages using the input as the WHERE clause
-
+        c.execute("SELECT message FROM spam_messages WHERE message LIKE ?", ('%' + message + '%',))
+        related_spam_messages = [row[0] for row in c.fetchall()]
         
     # Fetch all spam messages
     c.execute("SELECT message FROM spam_messages")

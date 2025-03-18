@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "Jeff Z Private SQS",
+        "projectKey": "SonarSource-Demos_python-spam-detector_c7bea657-9204-4c6b-8a01-ce716474dd89"
+    }
+}

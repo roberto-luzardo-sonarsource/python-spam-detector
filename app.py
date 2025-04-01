@@ -12,10 +12,9 @@ def init_db():
     c.execute('''CREATE TABLE IF NOT EXISTS spam_words
                  (id INTEGER PRIMARY KEY, word TEXT)''')
     conn.commit()
-    print("Brian was here")
-    print("Jeff is still here")
-    print("Jeff is still here")
-    print("Jeff is still here")
+    print("Jeff was here")
+    print("Jeff was here")
+    print("Jeff was here")
     conn.close()
 
 # Insert some sample data

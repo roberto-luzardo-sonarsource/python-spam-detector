@@ -15,6 +15,7 @@ def init_db():
     print("Jeff was here")
     print("Jeff was here")
     print("Jeff was here")
+    print("Jeff was here again")
     conn.close()
 
 # Insert some sample data

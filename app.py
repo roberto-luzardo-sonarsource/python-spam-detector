@@ -19,6 +19,9 @@ def init_db():
     conn.close()
 
 # Insert some sample data
+# It seems you want to make a comment on this file. Could you clarify what you mean by a "bs comment"? Are you looking to add a placeholder comment, a joke, or something else? Let me know how I can assist!
+    print("Brian was here again")
+    
 def insert_sample_data():
     conn = sqlite3.connect('spam_detector.db')
     c = conn.cursor()
